@@ -81,3 +81,7 @@ body {
         display: block;
     }
 }
+.carta-container {
+    border-radius: 50px;
+    
+}
