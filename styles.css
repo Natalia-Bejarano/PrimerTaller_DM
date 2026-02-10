@@ -80,6 +80,14 @@ body {
     .logo{
         display: block;
     }
+    .login-button { 
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+.form-signup-container{
+    justify-content: space-between;
+    height: 100vh;
+}
 }
 .carta-container {
     width: 110px;
@@ -90,19 +98,27 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    margin-bottom: 32px;
 }
 .carta {
     width: 70px;
+
 }
 .recibir {
     color: #E5252E;
     cursor: pointer;
     text-decoration: none;
 }
-.login-button-2 {
-    background-color: #FFFFFF;
-    color: #E5252E;
-    border: 1px solid var(--rojo);
+.secondary-button { 
+    background-color: var(--white);
+    border-radius: 8px;
+    border:  1px solid var(--rojo);
+    color: var(--rojo);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
 }
 .login {
     min-height: 100vh;
@@ -110,33 +126,15 @@ body {
     justify-content: center;
     align-items: center;
 }
-.form-container{
-    width: 400px;
-}
+
 .form-container > h1 {
     text-align: center;
 }
-@media (max-width: 640px) {
-    .login {
-        align-items: center;
-        padding: 20px;
-    }
-    .form-container {
-        width: 100%;
-    }
-    .form {
-        height: 100%;
-    }
-    .login h1 {
-        text-align: center;
-    }
-    .login .login-button {
-        width: 100%;
-    }
+.edit {
+    color: var(--very-light-pink);
 }
-.form .login-button {
-    background-color:#FFFFFF;
-    color: #E5252E;
-    border:  1px solid var(--rojo);
+.form-signup-container{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
 }
-
