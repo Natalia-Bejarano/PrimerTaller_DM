@@ -83,11 +83,11 @@ body {
     .login-button { 
     margin-top: 200px;
     margin-bottom: 30px;
-}
-.form-signup-container{
-    justify-content: space-between;
-    height: 100vh;
-}
+    }
+    .form-signup-container{
+        justify-content: space-between;
+        height: 100vh;
+    }
 }
 .carta-container {
     width: 110px;
