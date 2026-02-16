@@ -139,6 +139,7 @@ body {
     display: flex;
     width: 300px;
     flex-direction: column;
+
 }
 .cards-container{
     display: grid;
@@ -210,7 +211,6 @@ ul{
  color: var(--black)
  
 }
-
 
 @media (max-width: 640px){
     :root {
