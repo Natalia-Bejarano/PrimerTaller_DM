@@ -1,0 +1,225 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --rojo: #E5252E;
+    --sm: 14px;
+    --md: 16px; 
+    --lg: 18px;
+    --card-size: 100px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.login {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
+    display: none;
+}
+.title {
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    text-align: center;
+}
+.subtitle {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+.primary-button { 
+    background-color: var(--rojo);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+.login-button { 
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+@media (max-width: 640px){
+    .logo{
+        display: block;
+    }
+    .login-button { 
+    margin-top: 200px;
+    margin-bottom: 30px;
+    }
+    .form-signup-container{
+        justify-content: space-between;
+        height: 100vh;
+    }
+}
+.carta-container {
+    width: 110px;
+    height: 110px;
+    background-color:#F7F7F7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+.carta {
+    width: 70px;
+
+}
+.recibir {
+    color: #E5252E;
+    cursor: pointer;
+    text-decoration: none;
+}
+.secondary-button { 
+    background-color: var(--white);
+    border-radius: 8px;
+    border:  1px solid var(--rojo);
+    color: var(--rojo);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+.login {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container > h1 {
+    text-align: center;
+}
+.edit {
+    color: var(--very-light-pink);
+}
+.form-signup-container{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card-size));
+    gap: 26px;
+    place-content: center;
+}
+
+.product-card {
+    width: var(--card-size);
+}
+
+.product-card img {
+    width: var(--card-size);
+    height: var(--card-size);
+    border-radius: 20px;
+    object-fit: cover;
+}
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.product-info figure {
+    margin: 0;
+}
+
+.product-info figure img {
+    width: 35px;
+    height: 35px;
+}
+
+.product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.product-info div p:nth-child(2) {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
+}
+
+.container-ul {
+    padding: 20px;
+    text-align: right;
+    border-radius: 15px;
+    width: 220px;
+    font-size: var(--md);
+}
+ul:first-child {
+    font-weight:bold;
+    
+}
+
+ul{
+    padding: 15px;
+    margin: 0;
+    list-style: none;
+    
+}
+.container-ul a {
+ font-size: var(--md);
+ text-decoration: none;
+ color: var(--black)
+ 
+}
+
+
+@media (max-width: 640px){
+    :root {
+        --card-size: 140px;
+    }
+}
+.categorie-menu{
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    text-align: left;
+}
+
